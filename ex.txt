@@ -1,0 +1,28 @@
+            Built-in Data Structures
+1. List
+2. Tuple
+3. Dictionary
+4. Set
+
+List - A list is a built in data type in python that stores multiple items in a single variable.
+It stores Homogeneous and heterogeneous type of data
+
+fetaures:
+1. Ordered - Elements maintain their position in the list
+2. Mutable - Which means we can modify its elements after creating it
+3. Allows duplicates
+4. Supports indexing
+5. It supports nested List
+6. Allows different data types
+
+
+
+Tuple - A tuple is a built in Python data type used to store multiple items in a single variable.
+
+fetaures:
+1. Ordered - Elements maintain their positions
+2. Immutable - Elements cannot be modified after creation.
+3. Allows duplicates
+4. Allows different data types
+5. Indexing
+6. It supports nested list

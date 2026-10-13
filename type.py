@@ -96,15 +96,196 @@
 
 # Practical:
 # Discount Calculation
-amount = int(input("Enter amount: "))
-if amount>=1000:
-  discount = amount*0.10
-  final_amount = amount-discount
-  print(f"Discount Applied successfully: {discount}")
-  print(f"Total Amount after Discount: {final_amount}")
-else:
-  print("No Discount applied")
-  print(f"Total Amount: {amount}")
+# amount = int(input("Enter amount: "))
+# if amount>=1000:
+#   discount = amount*0.10
+#   final_amount = amount-discount
+#   print(f"Discount Applied successfully: {discount}")
+#   print(f"Total Amount after Discount: {final_amount}")
+# else:
+#   print("No Discount applied")
+#   print(f"Total Amount: {amount}")
+
+                
+                
+                # Looping statements
+                
+# for loop
+
+# for i in range(0,5):
+#   print(i)
+
+# name = "Python"
+# for i in name:
+#   print(i)
+
+# users = ["Nehru","Rakesh","Kiran","Suresh"]
+# for i in users:
+#   print(i)
+
+# While loop
+
+# password = ""
+# while password!="Rakesh@123":
+#   password = input("Enter your password: ")
+
+# print("Login successful")
+
+
+# # Break statement
+# for i in range(1,11):
+#   if i==5:
+#     break
+#   print(i)
+
+  # continue statement
+# for i in range(1,6):
+#   if i == 3:
+#     continue
+#   print(i)
+
+# names = ["David","Ravi","Kiran","Sanjay"]
+
+# for i in names:
+#   if i == "Kiran":
+#     continue
+#   print(i)
+
+
+  # pass statement
+  
+# def dashboard():
+#  pass
+  
+# def reels():
+#   print("This is ur reels....")
+  
+# reels()
+# for i in "Python":
+#   pass
+# print("Done")
+
+
+                          # List
+# numbers = [10,20,30,40]
+# data = [10,"Raja",25.5,True]
+# print(numbers)
+# print(data)
+# print(data[2])
+# print(data[-1])
+# print(len(data))
+
+# Looping through list
+# sales = [200,350,400,150]
+# for s in sales:
+#   print(s)
+
+# Find total Sales
+# sales = [200,350,400,150]
+# total = 0
+# for s in sales:
+#   total = total+s
+# print(total)
+
+# List is a mutable
+# numbers = [10,20,30]
+# numbers[1] = 50
+# print(numbers)
+
+# Calculating Marks
+# marks = [80,90,70,85]
+# total = 0
+# for m in marks:
+#   total = total+m
+# print(f"Total Marks: {total}")
+# avg = total/len(marks)
+# print(f"Average: {avg}")
+
+                                  # List Methods
+# append() - Adding item at end of a list
+# numbers = [10,20,30]
+# numbers.append(40)
+# print(numbers)
+
+# pop()
+# numbers = [10,20,30]
+# numbers.pop()
+# print(numbers)
+
+# insert() - TO add element at specific position
+# numbers = [10,20,30]
+# numbers.insert(1,50)
+# print(numbers)
+
+# remove()
+# numbers = [10,20,30]
+# numbers.remove(20)
+# print(numbers)
+
+# sort()
+# numbers = [10,40,20,100,30]
+# numbers.sort() #Ascending order
+# numbers.sort(reverse=True) #Descending order
+# print(numbers)
+
+# count()
+# numbers = [10,20,10,10,40,10,50]
+# print(numbers.count(10))
+
+# extend()
+# numbers = [10,20,30]
+# numbers.extend([40,50,60])
+# print(numbers)
+# numbers.clear()
+# print(numbers)
+# b = numbers.copy()
+# print(b)
+
+# sales_day1 = [200,300,400]
+# sales_day2 = [150,250,350]
+# sales_day1.extend(sales_day2)
+# print(sales_day1)
+
+# print(type(sales_day1))
+
+                        # tuple
+# numbers = (10,20,30,10)
+# print(type(numbers))
+# print(numbers)
+# print(numbers[2])
+# print(numbers[-1])
+# print(numbers.count(10))
+# fruits = ("Mango","Apple","Orange","Watermelon")
+# print(fruits.index("Orange"))
+# print(len(numbers))
+# print(max(numbers))
+# print(min(numbers))
+# print(sum(numbers))
+
+# # Packing and unpacking Tuple
+# student = ("Ravi",22,"Chennai")
+# print(student)
+
+# Unpacking
+# name,age,city = student
+# print(name,age,city)
+# print(type(name))
+
+# name = "Kishore"
+# print(name)
+
+# username = (name,)
+# print(type(username))
+
+
+
+
+
+
+  
+  
+  
+  
 
   
 
