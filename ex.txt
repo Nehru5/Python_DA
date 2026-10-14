@@ -26,3 +26,24 @@ fetaures:
 4. Allows different data types
 5. Indexing
 6. It supports nested list
+
+
+Dictionary - A Dictionary is a built in python data type that stores data in the form of key-value pairs.
+
+fetaures:
+1. Key-value pairs
+2. Mutable
+3. Ordered
+4. Unique keys
+5. Different data types
+6. Values can be duplicated
+
+Set - A set is a collection of Unique elements. It does not allow duplicate values
+
+fetaures:
+1. Sets are mutable
+2. Sets do not allow duplicate values
+3. Sets are unordered
+4. Sets do not support indexing
+5. Sets can contain different data types
+

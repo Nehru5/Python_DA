@@ -279,10 +279,91 @@
 
 
 
-
-
-
+                    #Dictionary
+# student = {
+#   "name":"Ravi",
+#   "age":25,
+#   "skills":["HTML","CSS","JS"],
+#   "address":{
+#     "city":"Bengaluru",
+#     "state":"Karnataka"
+#   }
+# }
+# print(student)
+# # Accessing Values using square brackets
+# print(student["name"])
+# print(student["address"]["city"])
+# print(student["skills"][2])
+# # print(student["country"])
+# # Accessing values using get()
+# print(student.get("name"))
+# print(student.get("age"))
+# print(student.get("country","No country found"))
   
+student = {
+  "name":"Ravi",
+  "age":22,
+  "skills":["HTML","JS","Angular"]
+}
+# Adding the item
+# student["city"] = "Bengaluru"
+# print(student)
+
+# # Updating multiple items
+# student.update({"name":"Yogesh","age":30})
+# print(student)
+# student["skills"][2] = "React js"
+# print(student)
+
+# Deleting
+# del student["age"]
+# print(student)
+
+# clear()
+# student.clear()
+# print(student)
+
+# Dictionary methods
+
+# keys()
+# print(student.keys())
+# print(student.values())
+# print(student.items())
+
+# Looping through dictionary
+# for i,j in student.items():
+#   print(i,j)
+  
+# for i in student.keys():
+#   print(i)
+
+# for i in student.values():
+#   print(i)
+
+                                # Sets
+# numbers = {10,20,30,10}
+# print(type(numbers))
+# print(numbers)
+
+# Adding elements
+# numbers.add(40)
+# print(numbers)
+
+# Removing elements
+# numbers.remove(20)
+# print(numbers)
+# numbers.discard(200)
+# print(numbers)
+
+
+# set operations
+
+a = {10,20,30}
+b = {30,50,60}
+print(a.union(b))
+print(a.intersection(b))
+print(b.difference(a))
+
   
   
   
