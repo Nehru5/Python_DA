@@ -47,3 +47,15 @@ fetaures:
 4. Sets do not support indexing
 5. Sets can contain different data types
 
+                                          Functions
+A Function is a block of code or statement which will get execute whenever we call or invoke.
+
+syntax:
+
+def function_name():
+  #statement or body
+
+function_name()
+
+
+

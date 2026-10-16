@@ -358,12 +358,187 @@ student = {
 
 # set operations
 
-a = {10,20,30}
-b = {30,50,60}
-print(a.union(b))
-print(a.intersection(b))
-print(b.difference(a))
+# a = {10,20,30}
+# b = {30,50,60}
+# print(a.union(b))
+# print(a.intersection(b))
+# print(b.difference(a))
 
+                                        # Functions
+# def greet():
+#   print("Hello, Welcome")
+  
+# greet()
+    
+# Parameter
+
+# Without parameter
+
+# def greet():
+#   print("Welcome Divya")
+
+# greet()
+
+# def greet2():
+#   print("Welcome Rajesh")
+
+# greet2()
+
+# def greet3():
+#   print("Welcome Manoj....")
+  
+# greet3()
+
+
+# With parameter
+
+# def greet(username):
+#   print(f"Welcome {username}")
+  
+# greet("Divya")
+# greet("Ramesh")
+
+# No of parameters = No of Arguments
+
+
+# Function with Return type
+
+# def add(a,b):
+#   return a+b
+
+# a = add(2,3)
+# print(a)
+# if a >3:
+#   print("You r eligible")
+
+# Salary bonus(Return example)
+
+# def bonus(salary):
+#   return salary+2000
+
+# first_salary = bonus(25000)
+# print(first_salary)
+
+# Returning multiple values
+
+# def student():
+#   return "Ravi", 23, "Python"
+
+# name,age,course = student()
+# print(name)
+# print(age)
+# print(course)
+
+# Return is better - Can store value, Can reuse value, can perform calculations
+
+# def test():
+#   print("Hello")
+#   return "Welcome"
+#   print("Good night")
+  
+# a = test()
+# print(a)
+
+# Important rule - Once return executes, function stops immediately....
+
+
+
+# Default parameter in Function
+
+# def login(user="Guest"):
+#   print(f"Welcome, {user}")
+  
+# login()
+# login("Ganesh")
+
+# def order(item,quantity=1):
+#   print(f"Item Name: {item}")
+#   print(f"Quantity: {quantity} - {quantity*1500}")
+  
+# order("Laptop")
+
+
+
+# Positional Argument
+
+# def student(name,age):
+#   print(f"Name: {name}")
+#   print(f"Age: {age}")
+  
+# student("Santhosh",25)
+
+
+
+# Keyword arguments
+
+# def student(name,age):
+#   print(f"Name: {name}")
+#   print(f"Age: {age}")
+  
+# student(age = 25,name="Santhosh")
+
+
+# Positional argument + Keyword Argument(Mixed)
+
+# def student(name,age,course):
+#   print(name,age,course)
+
+# student("Rakesh",age = 25,course="Python")
+
+# Important Rule - Positional arguments must come before Keyword arguments
+
+# *args(Multiple arguments)
+# def numbers(*args):
+#   print(args)
+  
+# numbers(10,20,30,40)
+
+# def add(a,b):
+#   print(a+b)
+  
+# add(2,3)
+
+# def add1(a,b,c):
+#   print(a+b+c)
+
+# add1(10,20,30)
+
+# def total(*numbers):
+#   sum = 0
+#   for i in numbers:
+#     sum = sum+i
+#   print(sum)
+  
+# total(1,2,3)
+# total(10,20,30,40,50)
+
+
+# def cart(*items):
+#   print(f"Items in my Cart: {items}")
+  
+# cart("Laptop","Mouse","Keyboard")
+
+
+# **kwargs()
+
+def student(**data):
+  print(data)
+  # Accessing values
+  print(data["name"])
+  print(data["age"])
+  print(data["course"])
+  
+  for i,j in data.items():
+    print(i,j)
+
+student(name="Ravi",age=23,course="Java")
+
+
+  
+
+  
+
+  
   
   
   
