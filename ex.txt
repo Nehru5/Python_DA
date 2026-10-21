@@ -55,7 +55,27 @@ syntax:
 def function_name():
   #statement or body
 
-function_name()
 
+Lambda Function(Anonymous function)
+ - A Lambda function is a small one line function
+
+
+ syntax: 
+ lambda arguments: expression
+
+ Limitations:
+ 1. One expression
+ 2. No multiple statements
+ 3. No loops
+
+
+                                        OOPS
+1. Creating a Class
+2. Creating an object
+3. __init__ method
+4. Attribute
+    Instance Attribute
+    Class Attribute
+5. Methods
 
 

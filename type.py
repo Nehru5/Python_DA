@@ -521,17 +521,32 @@ student = {
 
 # **kwargs()
 
-def student(**data):
-  print(data)
-  # Accessing values
-  print(data["name"])
-  print(data["age"])
-  print(data["course"])
+# def student(**data):
+#   print(data)
+#   # Accessing values
+#   print(data["name"])
+#   print(data["age"])
+#   print(data["course"])
   
-  for i,j in data.items():
-    print(i,j)
+#   for i,j in data.items():
+#     print(i,j)
 
-student(name="Ravi",age=23,course="Java")
+# student(name="Ravi",age=23,course="Java")
+
+
+
+
+# Lambda function
+
+# def add(a,b):
+#   return a+b
+
+# a = add(7,8)
+# print(a)
+
+# add = lambda a,b : a+b
+# a = add(7,8)
+# print(a)
 
 
   
