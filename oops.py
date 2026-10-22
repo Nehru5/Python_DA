@@ -69,7 +69,7 @@
 # account1_balance = withdraw(account1_name,account1_balance,1500)
 # check_balance(account1_name,account1_balance)
 
-
+                                                                      # OOPS
 
 # Creating a class
 
@@ -92,22 +92,87 @@
 
 
 
+# class Student:
+  
+#   def __init__(self,name,age):
+#     self.name = name
+#     self.age = age
+    
+  
+
+  
+    
+
+# student1 = Student("Kiran",20)
+# student2 = Student("Suresh",25)
+# print(student1.name,student1.age)
+# print(student2.name,student2.age)
+
+
+                                          # Instance Attribute and Class Attribute
+                                          
 class Student:
   
+  college = "Dr. AIT" #class attribute
+  
   def __init__(self,name,age):
-    self.name = name
-    self.age = age
+    self.name = name #instance attribute
+    self.age = age   #instance attribute
     
-  
+    
+    
+# student1 = Student("Kishore",32)
+# # student1.city = "Bengaluru" #Instance attribute
+# student2 = Student("Prasanth",12)
+# print(student1.name)
+# print(student1.age)
+# print(student2.name)
+# print(student2.age)
+# print("--------------")
+# print(student1.college)
+# print(student2.college)
+# print(Student.college)
+# Student.country = "India" #Class attribute
+# print(student1.country)
+# print(Student.country)
 
-  
-    
 
-student1 = Student("Kiran",20)
-student2 = Student("Suresh",25)
-print(student1.name,student1.age)
-print(student2.name,student2.age)
-    
+# Modifying an Instance Attribute
+# print(student1.name)
+# student1.name = "Rajesh"
+# print(student1.name)
+
+
+# Modifying a class attribute
+
+# print(Student.college)
+# # Student.college = "Impact"
+# # print(Student.college)
+
+
+# # Modifying class attribute using objects will create a new instance attribute inside the object
+
+# student1.college = "Lawrence college"
+# print(Student.college)
+# print(student1.college)
+
+
+# student1 = Student("Nagraj",22)
+# student2 = Student("Pavan",28)
+# # Deleting an Instance attribute
+# # del student1.age
+# # print(student1.age)
+
+# # Deleting Class Attribute
+# del Student.college
+# print(Student.college)
+
+
+
+
+
+
+
 
 
 
