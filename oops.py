@@ -168,6 +168,132 @@ class Student:
 # print(Student.college)
 
 
+                                              # Instance Method
+
+
+# class Student:
+#   def __init__(self,name,age):
+#     self.name = name
+#     self.age = age
+    
+#   # Instance Method
+#   def display(self):
+#     print(self.name)
+#     print(self.age)
+    
+  
+# student1 = Student("Raja",23)
+# student1.display()
+
+
+# Instance method can also modify object data
+# class Student:
+#   def __init__(self,name,age):
+#     self.name = name
+#     self.age = age
+    
+#   def increase_age(self):
+#     self.age  = self.age+1
+    
+  
+# student1 = Student("Kishore",30)
+# print(student1.age)
+# student1.increase_age()
+# print(student1.age)
+# student1.increase_age()
+# print(student1.age)
+
+                                  # Class Method
+                                  
+# class Student:
+#   college = "AIT College"
+  
+#   def __init__(self,name,age):
+#     self.name = name
+#     self.age = age
+    
+#   @classmethod
+#   def change_college(cls,new_college):
+#     cls.college = new_college
+    
+
+# student1 = Student("Ravi",25)
+# print(Student.college)
+# Student.change_college("ABC College")
+# print(Student.college)
+    
+    
+    
+                                              #Static Method
+# class Student:
+#   def __init__(self,name,age):
+#     self.name = name
+#     self.age = age
+    
+#   @staticmethod
+#   def is_valid_age(age):
+#     return age>=18
+    
+    
+    
+# name = "Mahesh"
+# age = 20
+
+# if Student.is_valid_age(age):
+#   student1 = Student(name,age)
+#   print("Student created")
+# else:
+#   print("Invalid age")
+  
+# print(student1.age)
+
+
+                                        # Bank Management
+                                        
+class BankManagement:
+  def __init__(self,acccountHolder,account_no,balance):
+    self.accountHolder = acccountHolder
+    self.account_no = account_no
+    self.balance = balance
+    
+    
+  def display_data(self):
+    print(f"Name: {self.accountHolder}\nAccount Number: {self.account_no}\nBalance: {self.balance}")
+    
+  def check_balance(self):
+    print(f"Your Current balance: {self.balance}")
+    
+  def deposit(self,amount):
+    if amount<=0:
+      print("Invalid Amount")
+    else:
+      self.balance = self.balance+amount
+      print(f"{amount} Deposited successfully...New Balance: {self.balance}")
+      
+  def withdraw(self,amount):
+    if amount>self.balance :
+      print("Insufficient Funds..")
+    elif amount<=0:
+      print("Invalid Amount")
+    else:
+      self.balance = self.balance-amount
+      print(f"{amount} Withdrawl successfully...Current Balance: {self.balance}")
+      
+      
+account1 = BankManagement("Kishore",101,5000)
+account2 = BankManagement("Shreya",102,2000)
+account1.display_data()
+account2.display_data()
+
+account1.deposit(1000)
+account1.withdraw(1500)
+    
+
+
+    
+    
+    
+
 
 
 

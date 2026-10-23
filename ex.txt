@@ -82,3 +82,19 @@ Lambda Function(Anonymous function)
     Static method
 
 
+    Instance Method Charcteristics:
+      1. Defined inside a class
+      2. Takes self as the first parameter
+      3. self represents the current object
+      4. Can access attribute using self
+      5.Can modify instance attribute
+
+
+    Class Method Charcteristics:
+      1. Defined inside a class
+      2. USes the @classmethod decorator
+      3. Takes cls as the first parameter
+      4. cls represents the current Class
+      5. Can access and modify class attribuite
+
+
