@@ -250,50 +250,131 @@ class Student:
 
                                         # Bank Management
                                         
-class BankManagement:
-  def __init__(self,acccountHolder,account_no,balance):
-    self.accountHolder = acccountHolder
-    self.account_no = account_no
-    self.balance = balance
+# class BankManagement:
+#   def __init__(self,acccountHolder,account_no,balance):
+#     self.accountHolder = acccountHolder
+#     self.account_no = account_no
+#     self.balance = balance
     
     
-  def display_data(self):
-    print(f"Name: {self.accountHolder}\nAccount Number: {self.account_no}\nBalance: {self.balance}")
+#   def display_data(self):
+#     print(f"Name: {self.accountHolder}\nAccount Number: {self.account_no}\nBalance: {self.balance}")
     
-  def check_balance(self):
-    print(f"Your Current balance: {self.balance}")
+#   def check_balance(self):
+#     print(f"Your Current balance: {self.balance}")
     
-  def deposit(self,amount):
-    if amount<=0:
-      print("Invalid Amount")
-    else:
-      self.balance = self.balance+amount
-      print(f"{amount} Deposited successfully...New Balance: {self.balance}")
+#   def deposit(self,amount):
+#     if amount<=0:
+#       print("Invalid Amount")
+#     else:
+#       self.balance = self.balance+amount
+#       print(f"{amount} Deposited successfully...New Balance: {self.balance}")
       
-  def withdraw(self,amount):
-    if amount>self.balance :
-      print("Insufficient Funds..")
-    elif amount<=0:
-      print("Invalid Amount")
-    else:
-      self.balance = self.balance-amount
-      print(f"{amount} Withdrawl successfully...Current Balance: {self.balance}")
+#   def withdraw(self,amount):
+#     if amount>self.balance :
+#       print("Insufficient Funds..")
+#     elif amount<=0:
+#       print("Invalid Amount")
+#     else:
+#       self.balance = self.balance-amount
+#       print(f"{amount} Withdrawl successfully...Current Balance: {self.balance}")
       
       
-account1 = BankManagement("Kishore",101,5000)
-account2 = BankManagement("Shreya",102,2000)
-account1.display_data()
-account2.display_data()
+# account1 = BankManagement("Kishore",101,5000)
+# account2 = BankManagement("Shreya",102,2000)
+# account1.display_data()
+# account2.display_data()
 
-account1.deposit(1000)
-account1.withdraw(1500)
+# account1.deposit(1000)
+# account1.withdraw(1500)
     
 
 
     
     
+                # Encapsulation
+                
+                # Protected balance
+# class BankAccount:
+#   def __init__(self,name,balance):
+#     self.name = name
+#     self._balance = balance
+    
+#   def deposit(self,amount):
+#     if amount>0:
+#       self._balance = self._balance+amount
+    
+# account1 = BankAccount("Rajesh",5000)
+# print(account1._balance)
+
+# account1.deposit(2000)
+# print(account1._balance)
+# print(account1._balance)
+# account1._balance = -234567898765434567
+# print(account1._balance)
+
+
+
+                          # Private
+# class BankAccount:
+#   def __init__(self,name,balance):
+#     self.name = name
+#     self.__balance = balance
+    
+#   def check_balance(self):
+#     print(self.__balance)
+    
+# account1 = BankAccount("Suresh",2000)
+# account1.check_balance()
+
+# # Name Mangling
+# account1._BankAccount__balance = 5000
+
+
+# Getters and Setters
+
+# class BankAccount:
+#   def __init__(self,balance):
+#     self.__balance = balance
+  
+#   # getter
+#   def get_balance(self):
+#     print(self.__balance)
+  
+#   # setter
+#   def set_balance(self,amount):
+#     if amount>0:
+#       self.__balance = self.__balance+amount
+    
+# account1 = BankAccount(3000)
+# account1.get_balance()
+# account1.set_balance(1000)
+# account1.get_balance()
     
 
+
+# Dont try
+
+# class BankAccount:
+#   def __int__(self,balance):
+#     self.__balance = balance
+    
+#   @property
+#   def balance(self):
+#     return self.__balance
+    
+#   @property.setter
+#   def balance(self,amount):
+#     if amount>0:
+#       self.__balance = self.__balance+amount
+#     else:
+#       print("Invalid amount")
+      
+# account = BankAccount(6000)
+# print(account.balance())
+    
+
+    
 
 
 

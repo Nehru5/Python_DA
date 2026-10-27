@@ -98,3 +98,14 @@ Lambda Function(Anonymous function)
       5. Can access and modify class attribuite
 
 
+
+Encapsulation: Encapsulation is the oops concept of bundling the data and the methods that operate on that data together, while controlling how the data can be accessed or modified.
+
+1. Public
+->A public attribuite is an attribuite that can be accessed and modified directly from outside the object
+2. Protected
+->A Protected attribuite is an attribuite prefixed with a single underscore(_), that indicates the attribuite is intended for interna use within the class and its related code.
+->Warning, signboard, indicators.....
+3. Private
+
+
