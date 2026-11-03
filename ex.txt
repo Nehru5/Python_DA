@@ -109,3 +109,24 @@ Encapsulation: Encapsulation is the oops concept of bundling the data and the me
 3. Private
 
 
+                              Inheritance
+->Inheritance means that one class can acquire the attributes and methods of another class.
+
+->Inheritance allows a new class to reuse the features of an existing class
+
+->The existing class is called as Parent class or Base class or Super class
+
+->The new class is called as Child class or derived class or sub class.
+
+college
+->Person
+  ->Teacher
+  ->Student
+
+
+
+
+                                Method Overriding
+->Method Overriding is an oops mechanism where a child class provides its own implementation of a method that is already defined in the parent class.
+
+

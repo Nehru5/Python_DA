@@ -356,14 +356,14 @@ class Student:
 # Dont try
 
 # class BankAccount:
-#   def __int__(self,balance):
+#   def __init__(self,balance):
 #     self.__balance = balance
     
 #   @property
 #   def balance(self):
 #     return self.__balance
     
-#   @property.setter
+#   @balance.setter
 #   def balance(self,amount):
 #     if amount>0:
 #       self.__balance = self.__balance+amount
@@ -371,10 +371,99 @@ class Student:
 #       print("Invalid amount")
       
 # account = BankAccount(6000)
-# print(account.balance())
+# print(account.balance)
+# account.balance()
+
+
+                        # Inheritance
+                        
+# class Person:
+#   def __init__(self,name,age):
+#     self.name = name
+#     self.age = age
     
+#   def display_details(self):
+#     print(f"Name: {self.name}")
+#     print(f"Age: {self.age}")
+    
+    
+# class Student(Person):
+#   pass
+
+# class Teacher(Person):
+#   pass
+
+
+# student1 = Student("Manu",20)
+# student1.display_details()
+
+# teacher1 = Teacher("Swetha",27)
+# teacher1.display_details()
+
 
     
+
+# class Person:
+#   def __init__(self,name,age):
+#     self.name = name
+#     self.age = age
+    
+  
+# class Student(Person):
+#   def __init__(self, name, age,course):
+#     super().__init__(name,age)
+#     self.course = course
+
+# student1 = Student("Kiran",22,"Python Fullstack")
+# print(student1.name)
+# print(student1.age)
+# print(student1.course)
+
+    
+
+#super() with a normal method
+
+# class Person:
+#   def display_detail(self):
+#     print("This is a Person")
+    
+# class Student(Person):
+#   def display(self):
+#     super().display_detail()
+#     print("This is Student")
+
+# student1 = Student()
+# student1.display()
+
+
+                                #Method Overriding
+                                
+                                
+class Employee:
+  def calculate_salary(self):
+    print("Calculating employee Salary.....")
+    
+    
+class Developer(Employee):
+  def calculate_salary(self):
+    basic_salary = 50000
+    bonus = 10000
+    total_salary = basic_salary+bonus
+    print(f"Developer Salary: {total_salary}")
+    
+
+class Manager(Employee):
+  def calculate_salary(self):
+    basic_salary = 70000
+    bonus = 20000
+    total_salary = basic_salary+bonus
+    print(f"Manager Salary: {total_salary}")
+    
+    
+developer1 = Developer()
+manager1 = Manager()
+developer1.calculate_salary()
+manager1.calculate_salary()
 
 
 
