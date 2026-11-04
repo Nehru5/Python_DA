@@ -439,31 +439,154 @@ class Student:
                                 #Method Overriding
                                 
                                 
-class Employee:
-  def calculate_salary(self):
-    print("Calculating employee Salary.....")
+# class Employee:
+#   def calculate_salary(self):
+#     print("Calculating employee Salary.....")
     
     
-class Developer(Employee):
-  def calculate_salary(self):
-    basic_salary = 50000
-    bonus = 10000
-    total_salary = basic_salary+bonus
-    print(f"Developer Salary: {total_salary}")
+# class Developer(Employee):
+#   def calculate_salary(self):
+#     basic_salary = 50000
+#     bonus = 10000
+#     total_salary = basic_salary+bonus
+#     print(f"Developer Salary: {total_salary}")
     
 
-class Manager(Employee):
-  def calculate_salary(self):
-    basic_salary = 70000
-    bonus = 20000
-    total_salary = basic_salary+bonus
-    print(f"Manager Salary: {total_salary}")
+# class Manager(Employee):
+#   def calculate_salary(self):
+#     basic_salary = 70000
+#     bonus = 20000
+#     total_salary = basic_salary+bonus
+#     print(f"Manager Salary: {total_salary}")
     
     
-developer1 = Developer()
-manager1 = Manager()
-developer1.calculate_salary()
-manager1.calculate_salary()
+# developer1 = Developer()
+# manager1 = Manager()
+# developer1.calculate_salary()
+# manager1.calculate_salary()
+
+
+#Single Inheritance
+
+# class Parent:
+#   def house(self):
+#     print("Parent owns a house")
+    
+# class Child(Parent):
+#   def bike(self):
+#     print("Child owns a bike")
+    
+    
+# obj = Child()
+# obj.bike()
+# obj.house()
+
+
+# class Employee:
+#   def employee_details(self):
+#     print("Employee Name: Kiran")
+#     print("Salary: 30000")
+
+# class Manager(Employee):
+#   def manage_team(self):
+#     print("Manager is managing the team")
+    
+
+# obj = Manager()
+# obj.employee_details()
+# obj.manage_team()
+    
+    
+    
+# Multiple Inheritance
+
+# class Father:
+#   def father_property(self):
+#     print("Father owns a car")
+    
+# class Mother:
+#   def mother_property(self):
+#     print("Mother owns a house")
+    
+    
+# class Child(Father,Mother):
+#   def child_property(self):
+#     print("Child owns a bike")
+    
+# obj = Child()
+# obj.father_property()
+# obj.mother_property()
+# obj.child_property()
+
+
+# class Camera:
+#   def take_photo(self):
+#     print("Taking a Photo")
+    
+# class MusicPlayer:
+#   def play_music(self):
+#     print("Playing Music")
+    
+    
+# class SmartPhone(Camera,MusicPlayer):
+#   def make_call(self):
+#     print("Making a phone call.....")
+    
+# obj = SmartPhone()
+# obj.make_call()
+# obj.play_music()
+# obj.take_photo()
+
+
+# Multilevel Inheritance
+
+# class Grandfather:
+#   def grandfather_property(self):
+#     print("Grandfather owns Land")
+    
+# class Father(Grandfather):
+#   def father_property(self):
+#     print("Father owns a car")
+    
+    
+# class Child(Father):
+#   def child_property(self):
+#     print("Child owns a Bike")
+    
+    
+# obj = Child()
+# obj.grandfather_property()
+# obj.father_property()
+# obj.child_property()
+
+
+# Hierarchical Inheritance
+
+class Payment:
+  def payment_status(self):
+    print("Payment is being processed....")
+    
+class CreditCard(Payment):
+  def pay_by_card(self):
+    print("Payment through Credit card")
+
+class UPI(Payment):
+  def pay_by_upi(self):
+    print("Payment through UPI")
+    
+class Netbanking(Payment):
+  def pay_by_netbanking(self):
+    print("Payment throgh Net banking")
+    
+    
+obj1 = CreditCard()
+obj1.pay_by_card()
+
+obj2 = UPI()
+
+    
+
+
 
 
 

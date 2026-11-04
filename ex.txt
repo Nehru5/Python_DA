@@ -130,3 +130,11 @@ college
 ->Method Overriding is an oops mechanism where a child class provides its own implementation of a method that is already defined in the parent class.
 
 
+Types of Inheritance
+1. Single Inheritance
+2. Multiple Inheritance
+3. Multilevel Inheritance
+4. Hierarchical Inheritance
+5. Hybrid Inheritance
+
+
